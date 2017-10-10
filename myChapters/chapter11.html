@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Adam Azam | Official Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Adam Azam | Official Website</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../chapters.html">Chapters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../img/notes/binaryNumbersOne-bg.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Chapter 11: Data Types</h1>
+              <h2 class="subheading">Needed to tell the computer what type of data we are entering.</h2>
+              <span class="meta">Posted by
+                <a href="../about.html">Adam Azam</a>
+                on September 21, 2017</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>Data Types are needed to tell the computer  what type of data we are entering. Different data types are stored and processed by the computer in different ways. Computers can't instantly recognise types of data without us telling the computer what type of data is being processed and stored.</p>
+
+            <p>The main data types are:</p>
+			
+            <a href="../img/notes/introductionTable.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/introductionTable.png" alt="">
+            </a>
+            <span class="caption text-muted">A table on different data types</span>
+
+
+            <h2 class="section-heading">Representing text</h2>
+			
+            <p>All data stored in a computer is stored in binary therefore data types are stored in binary. To make data readable by all computer systems an approach had to be implemented. One approach to represent characters and strings is ASCII.</p>
+
+            <p>In an ASCII table each character of the alphabet, special symbols and control code are represented by the agreed binary patterns.</p>
+			
+			<p>ASCII is based on an 8-bit binary pattern (consisting of seven bits but also one parity bit - a bit that makes the binary number odd/even) which gave a possible combination of 128 separate characters. </p>
+			
+			<p>Extended ASCII uses 8 bits and was able to give a possible combination of 256 separate characters.</p>
+
+            <p>Unicode was originally based on a 16-bit binary pattern which allowed a more than 65000 characters to be represented. But this was quickly updated to remove the 16-bit restriction.</p>
+			
+			<p>The original ASCII takes up the first 256 characters of the Unicode character set.</p>
+		
+            <a href="../img/asciiConversion.jpg" target="_blank">
+              <img class="img-fluid" src="../img/asciiConversion.jpg" alt="">
+            </a>
+            <span class="caption text-muted">Here is an ASCII table</span>
+			
+            <h2 class="section-heading">Boolean data</h2>
+
+            <p>Boolean is a data type that can take one of two values either TRUE or FALSE. 1 represents TRUE and 0 represents FALSE. </p>
+			
+			<p>Boolean data only requires one bit to store a value but is stored in one byte for convenience.</p>
+			
+            <h2 class="section-heading">Representing positive integers in binary</h2>
+
+            <p>Binary is a number system based on 2. The column values for 8-bit binary number is shown below:</p>
+			
+            <a href="../img/notes/binaryColumnTable.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/binaryColumnTable.png" alt="">
+            </a>
+            <span class="caption text-muted">8-bit Binary column value table</span>
+
+
+			<p>Binary numbers consist of 1s and 0s. To convert from binary to denary add the column values together for every column containing a 1, ignore all the 0s. For example a binary number of 01010110 will be:</p>
+			
+            <a href="../img/notes/binaryWorkingTable.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/binaryWorkingTable.png" alt="">
+            </a>
+            <span class="caption text-muted">How to convert binary to denary</span>
+
+
+			<p>To convert from denary to binary divide by 2 and record each remainder - do this until you reach 0. </p>
+			
+			<a href="../img/notes/convDenaryBinary.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/convDenaryBinary.png" alt="">
+            </a>
+            <span class="caption text-muted">How to convert denary to binary</span>
+
+			
+            <h2 class="section-heading">Representing negative integers in binary</h2>
+
+            <p>You can represent negative integers in two ways: Sign and Magnitude, Two's complement</p>
+			
+			<p>Sign and Magnitude is where the most significant bit (the bit in a multiple-bit binary number with the largest value) stores if the value is a positive or negative. This makes arithmetic within the computer complex. Here are the column values for 8-bit numbers:</p>
+			
+            <a href="../img/notes/signColumnTable.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/signColumnTable.png" alt="">
+            </a>
+            <span class="caption text-muted">Sign and Magnitude column value table</span>
+			
+			
+            <p>When storing the sign bit, store a positive number as 0 and a negative number as 1.</p>
+
+			<a href="../img/notes/signWorkingTable.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/signWorkingTable.png" alt="">
+            </a>
+            <span class="caption text-muted">How to convert denary to a sign and magnitude binary number</span>
+
+			
+			<p>Two’s complement is where the Most Significant Bit is considered negative if it is given a value of 1; in an 8-bit number the largest column value is -128 instead of 128. This makes arithmetic within the computer a lot easier to calculate. </p>
+
+			<a href="../img/notes/twoColumnTable.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/twoColumnTable.png" alt="">
+            </a>
+            <span class="caption text-muted">Two's complement column value table</span>
+
+			
+			<p>Here is an example:</p>
+			
+			<a href="../img/notes/twoWorkingTable.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/twoWorkingTable.png" alt="">
+            </a>
+            <span class="caption text-muted">How to convert denary to a two's complement binary number</span>
+			
+			
+            <h2 class="section-heading">Representing numbers in Hexadecimal</h2>
+			
+            <p>Hexadecimal is a number system with a base of 16. Computers don’t work in hexadecimal - they work in binary. Hexadecimal is used to make writing and reading binary numbers a lot simpler. For example FDA5 is a lot easier to read and write that the binary number of that value 1111110110100101. In hexadecimal the column headings are:</p>
+
+			<a href="../img/notes/hexColumnTable.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/hexColumnTable.png" alt="">
+            </a>
+            <span class="caption text-muted">Hexadecimal column value table</span>
+			
+			
+            <p>Because digits are used to represent the values 0 to 9 we have to use the letters (A-F) to represent the values 10 to 15 in hexadecimals.</p>
+
+			<a href="../img/notes/hexWorkingTable.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/hexWorkingTable.png" alt="">
+            </a>
+            <span class="caption text-muted">Denary numbers in Hexadecimal</span>
+			
+            <p>To convert a hexadecimal number into a binary number do the following:</p>
+
+			
+            <p>To convert a denary number into a hexadecimal number you have to repeatedly divide by 16 and record the remainders.</p>
+
+
+			
+            <h2 class="section-heading">Images and Sound</h2>
+			
+            <p>All data is stored in binary therefore images, sound and instructions are stored as binary patterns.</p>
+			
+			<p>In an image a black can be represented as 1 and white is represented as 0. Therefore one black pixel requires 1 bit. If you had 8 pixels in a row you would have a byte.</p>
+
+			<a href="../img/notes/blackAndWhite.gif" target="_blank">
+              <img class="img-fluid" src="../img/notes/blackAndWhite.png" alt="">
+            </a>
+            <span class="caption text-muted">This image is made up of 121 0s and 121 1s. </span>
+
+			<p>Images can be more complicated than this, especially when several colours need to be represented.</p>
+			
+			
+			<a href="../img/notes/numberOfBits.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/numberOfBits.png" alt="">
+            </a>
+            <span class="caption text-muted">Table on how many colours can be represented by a certain number of bits.</span>
+			
+			<p>Metadata is the information about the image that allows the computer to correctly interpret the binary data, of the image, accurately to recreate. Metadata can include information about the number of pixels per pixel, color depth, resolution and the dimensions of the image.</p>
+
+			<a href="../img/notes/metadata.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/metadata.png" alt="">
+            </a>
+            <span class="caption text-muted">Here is the Metadata shown for an image.</span>
+			
+			<p>Resolution is the number of pixels per unit. It can be measured in dpi (dots per inch). The higher the resolution the larger the data needed to store the image - the larger the file size is.</p>
+			
+			<p>Colour depth is the number of bits used for each pixel. The more bits used the greater the amount of colours that can be represented - the larger the file size is. </p>
+
+			
+			<p>Images can be stored in a bitmap format or a vector format. Here are the differences of a bitmap and vector image:</p>
+			
+			<a href="../img/notes/bitmap_vector_differences.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/bitmap_vector_differences.png" alt="">
+            </a>
+            <span class="caption text-muted">Differences of a Bitmap and Vector image.</span>
+
+			<p>Sound is a continuously varying analogue signal. Computers store sound by converting the analogue data into digital/binary data. To do this the analogue sound is sampled at certain intervals. The sampled data is the data that are stored in the digital format.</p>
+			
+			<p>There are two factors that affect sound: Sample rate and Bit rate.</p>
+						
+			<p>The sample rate is the number of times the sound is sampled per second. It is measured in Hz and the higher the sample rate the better the approximation to the original analogue sound.</p>
+
+			<a href="../img/notes/sample_rate_graph.png" target="_blank">
+              <img class="img-fluid" src="../img/notes/sample_rate_graph.png" alt="">
+            </a>
+            <span class="caption text-muted">Here is a sound sample rate graph as you can see the bar chart doesn't hit all the points of the graph. This means that the sound quality won't match the original analogue sound.</span>
+          
+		    <p>The bit rate is the number of bits per given time period for each sample in kilobits/s. The higher the bit rate the more accurate the sound is for the sample value.</p>
+		  
+		    <p>The higher the sample rate and bit rate the better the quality. However having a higher sample/bit rate require more bits to store more samples as well as more bits to store a more detailed sample.</p>
+			
+            <h2 class="section-heading">Instructions</h2>
+			
+			<p>Program Instructions and data are stored in binary.</p>
+
+			<p>When a program is run, the CPU goes to the start address to fetch the first instruction. A binary number is stored at this address, which is fetched and decoded into two parts: the operator and the operand.</p>
+
+			<p>The operand is a binary pattern that represents a machine-level instruction.</br>e.g an instruction to add a value to the accumulator</p>
+			
+			<p>The operand represents the data that contains a value or information needed to located data that is needed.</br>e.g the binary value for a location containing data that is going to be used.</p>
+			
+			<p>Computers can't tell the difference between data and instructions. It interprets what it finds NOT what it expects to find.</br>e.g if there are errors in a program it might fetch what is meant to be data but interprets it as an instruction.</p>
+            <h2 class="section-heading">Questions</h2>			
+			</div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/11azama">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Adam Azam | Official Website 2017</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

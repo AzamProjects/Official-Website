@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Adam Azam | Official Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+	</style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Adam Azam | Official Website</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../chapters.html">Chapters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../img/notes/binaryNumbersTwo-bg.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Chapter 12: Computer Arithmetic</h1>
+              <h2 class="subheading">Deals with methods of representing integers and real values and how to perform arithmetic calculations on them.</h2>
+              <span class="meta">Posted by
+                <a href="../about.html">Adam Azam</a>
+                on September 25, 2017</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>Data Types are needed to tell the computer  what type of data we are entering. Different data types are stored and processed by the computer in different ways. Computers can't instantly recognise types of data without us telling the computer what type of data is being processed and stored.</p>
+
+            <p>The main data types are:</p>
+			
+			<table style="width:100%" >
+			  <tr>
+				<th>Type</th>
+				<th>Description</th> 
+				<th>Examples</th> 
+			  </tr>
+			  <tr>
+				<td>Character</td>
+				<td>Single letters, digit, symbol, or control code</td>
+				<td>W, d, 9, ), 2, :</td>
+			  </tr>
+			  <tr>
+				<td>Strings</td>
+				<td>A sequence of alphanumeric characters</td>
+				<td>sadfads, JjiIOAjks, *1Hi£"65</td>
+			  </tr>
+			  <tr>
+				<td>Boolean</td>
+				<td>One of two values</td>
+				<td>True or False</td>
+			  </tr>
+				<td>Integer</td>
+				<td>A whole number with no decimal parts</td>
+				<td>789, -8, -232, 13, 2</td>
+			  </tr>
+				<td>Real</td>
+				<td>Numbers that can be decimals or have fractional parts</td>
+				<td>132.2, -12.3, &Pi;</td>
+			  </tr>
+			</table>
+
+            <h2 class="section-heading">Representing text</h2>
+			
+            <p>All data stored in a computer is stored in binary therefore data types are stored in binary. To make data readable by all computer systems an approach had to be implemented. One approach to represent characters and strings is ASCII.</p>
+
+            <p>In an ASCII table each character of the alphabet, special symbols and control code are represented by the agreed binary patterns.</p>
+			
+			<p>ASCII is based on an 8-bit binary pattern (consisting of seven bits but also one parity bit - a bit that makes the binary number odd/even) which gave a possible combination of 128 separate characters. </p>
+			
+			<p>Extended ASCII uses 8 bits and was able to give a possible combination of 256 separate characters.</p>
+
+            <p>Unicode was originally based on a 16-bit binary pattern which allowed a more than 65000 characters to be represented. But this was quickly updated to remove the 16-bit restriction.</p>
+			
+			<p>The original ASCII takes up the first 256 characters of the Unicode character set.</p>
+		
+            <a href="../img/asciiConversion.jpg">
+              <img class="img-fluid" src="../img/asciiConversion.jpg" alt="">
+            </a>
+            <span class="caption text-muted">Here is an ASCII table</span>
+			
+            <h2 class="section-heading">Boolean data</h2>
+
+            <p>Boolean is a data type that can take one of two values either TRUE or FALSE. 1 represents TRUE and 0 represents FALSE. </p>
+			
+			<p>Boolean data only requires one bit to store a value but is stored in one byte for convenience.</p>
+			
+            <h2 class="section-heading">Representing positive integers in binary</h2>
+
+            <p>Binary is a number system based on 2. The column values for 8-bit is shown below:</p>
+			
+            <a href="../img/notes/binaryColumnTable.png">
+              <img class="img-fluid" src="../img/notes/binaryColumnTable.png" alt="">
+            </a>
+
+			<p>Binary numbers consist of 1s and 0s. To convert from binary to denary add the column values together for every column containing a 1, ignore all the 0s. For example a binary number of 01010110 will be:</p>
+			
+            <a href="../img/notes/binaryWorkingTable.png">
+              <img class="img-fluid" src="../img/notes/binaryWorkingTable.png" alt="">
+            </a>
+
+			<p>To convert from denary to binary divide by 2 and record each remainder - do this until you reach 0. </p>
+			
+			<a href="../img/notes/convDenaryBinary.png">
+              <img class="img-fluid" src="../img/notes/convDenaryBinary.png" alt="">
+            </a>
+			
+            <h2 class="section-heading">Representing negative integers in binary</h2>
+
+            <p>You can represent negative integers in two ways: Sign and Magnitude, Two's complement</p>
+			
+			<p>Sign and Magnitude is where the most significant bit (the bit in a multiple-bit binary number with the largest value) stores if the value is a positive or negative. This makes arithmetic within the computer complex. Here are the column values for 8-bit numbers:</p>
+			
+            <a href="../img/notes/signColumnTable.png">
+              <img class="img-fluid" src="../img/notes/signColumnTable.png" alt="">
+            </a>
+			
+            <p>When storing the sign bit, store a positive number as 0 and a negative number as 1.</p>
+
+			<a href="../img/notes/signWorkingTable.png">
+              <img class="img-fluid" src="../img/notes/signWorkingTable.png" alt="">
+            </a>
+			
+			<p>Two’s complement is where the Most Significant Bit is considered negative if it is given a value of 1; in an 8-bit number the largest column value is -128 instead of 128. This makes arithmetic within the computer a lot easier to calculate. </p>
+
+			<a href="../img/notes/twoColumnTable.png">
+              <img class="img-fluid" src="../img/notes/twoColumnTable.png" alt="">
+            </a>
+			
+			<p>Here is an example:</p>
+			
+			<a href="../img/notes/twoWorkingTable.png">
+              <img class="img-fluid" src="../img/notes/twoWorkingTable.png" alt="">
+            </a>			
+			
+            <h2 class="section-heading">Representing numbers in Hexadecimal</h2>
+			
+            <p>Hexadecimal is a number system with a base of 16. Computers don’t work in hexadecimal - they work in binary. Hexadecimal is used to make writing and reading binary numbers a lot simpler. For example FDA5 is a lot easier to read and write that the binary number of that value 1111110110100101. In hexadecimal the column headings are:</p>
+
+			<a href="../img/notes/hexColumnTable.png">
+              <img class="img-fluid" src="../img/notes/hexColumnTable.png" alt="">
+            </a>			
+			
+            <p>Because digits are used to represent the values 0 to 9 we have to use the letters (A-F) to represent the values 10 to 15 in hexadecimals.</p>
+
+			<a href="../img/notes/hexWorkingTable.png">
+              <img class="img-fluid" src="../img/notes/hexWorkingTable.png" alt="">
+            </a>
+			
+            <h2 class="section-heading">Images, Sound, Instructions</h2>
+			
+            <p>All data is stored in binary therefore images, sound and instructions are stored as binary patterns.</p>
+			
+			<p>In an image a black can be represented as 1 and white is represented as 0. Therefore one black pixel requires 1 bit. If you had 8 pixels in a row you would have a byte.</p>
+
+			<a href="../img/notes/hexWorkingTable.png">
+              <img class="img-fluid" src="../img/notes/hexWorkingTable.gif" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/11azama">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Adam Azam | Official Website 2017</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
