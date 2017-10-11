@@ -27,6 +27,29 @@
 		}
 	</style>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		$(".denaryBinaryExample").hide();
+
+		$("#answer1").click(function(){
+			$(".denaryBinaryExample").toggle();
+		});
+	});
+	
+	$(document).ready(function(){
+		$(".negativeExample").hide();
+
+		$("#answer2").click(function(){
+			$(".negativeExample").toggle();
+		});
+	});
+	
+
+
+	</script>	
+	
   </head>
 
   <body>
@@ -269,36 +292,37 @@
 			
 			<p>Computers can't tell the difference between data and instructions. It interprets what it finds NOT what it expects to find.</br>e.g if there are errors in a program it might fetch what is meant to be data but interprets it as an instruction.</p>
 
-            <h2 class="section-heading">Questions</h2>		
 
-			<p><b>1. </b>Convert the denary number 273 into a:</br><span style="margin-left: 18px">(a) 16-bit number</span></br><span style="margin-left: 18px">(b) hexadeximal number</span></p>
+            <h2 class="section-heading">Questions and Answers</h2>		
 
-			<p><b>2. </b>Convert -89 into binary using:</br><span style="margin-left: 18px">(a) 8-bit sign and magnitude representation</span></br><span style="margin-left: 18px">(b) 8-bit two's complement representation</span></p>
+			<p><b>1. </b>Convert the denary number 273 into a:</br><span style="margin-left: 18px">(a) 16-bit number</span></br><span style="margin-left: 18px">(b) hexadeximal number</span></br><font color="red"><b id="answer1" style="cursor: pointer">Click to show ANSWER</b></font></p>
 
-			<p><b>3. </b>Explain how the image size and colour depth affect the size of an image size of an image file.</p>
+			<a href="../img/notes/chapter12/denaryBinaryExample.png" target="_blank" class="denaryBinaryExample">
+              <img class="img-fluid" src="../img/notes/chapter12/denaryBinaryExample.png" alt="">
+            </a>	
+
+			<a href="../img/notes/chapter12/denaryHexExample.png" target="_blank" class="denaryBinaryExample">
+              <img class="img-fluid" src="../img/notes/chapter12/denaryHexExample.png" alt="">
+            </a>				
 			
-			<p><b>4. </b>What metadata is stored with an image file?</p>
+			<p><b>2. </b>Convert -89 into binary using:</br><span style="margin-left: 18px">(a) 8-bit sign and magnitude representation</span></br><span style="margin-left: 18px">(b) 8-bit two's complement representation</span></br><font color="red"><b id="answer2" style="cursor: pointer">Click to show ANSWER</b></font></p>
 
-			<p><b>5. </b>Explain how bit rate and sample rate affect the size of a sound file.<p>
+			<a href="../img/notes/chapter12/signQuestion.png" target="_blank" class="negativeExample">
+              <img class="img-fluid" src="../img/notes/chapter12/signQuestion.png" alt="">
+            </a>	
 			
-			<p><b>6. </b>Explain how instructions are coded in binary in a computer and how the computer is able to distinguish between instructions and data.</p>
-
-			<hr>
+			<a href="../img/notes/chapter12/twoQuestion.png" target="_blank" class="negativeExample">
+              <img class="img-fluid" src="../img/notes/chapter12/twoQuestion.png" alt="">
+            </a>	
 			
-            <h2 class="section-heading">Answers</h2>		
-
-			<p><b>1. </b>Convert the denary number 273 into a:</br><span style="margin-left: 18px">(a) 16-bit number</span></br><span style="margin-left: 18px">(b) hexadeximal number</span></br><font color="red"><b>ANSWER:</b></font></p>
+			<p><b>3. </b>Explain how the image size and colour depth affect the size of an image size of an image file.</br><font color="red"><b>Click to show ANSWER</b></font></p>
 			
-			<p><b>2. </b>Convert -89 into binary using:</br><span style="margin-left: 18px">(a) 8-bit sign and magnitude representation</span></br><span style="margin-left: 18px">(b) 8-bit two's complement representation</span></br><font color="red"><b>ANSWER:</b></font></p>
+			<p><b>4. </b>What metadata is stored with an image file?</br><font color="red"><b>Click to show ANSWER</b></font></p>
 
-			<p><b>3. </b>Explain how the image size and colour depth affect the size of an image size of an image file.</br><font color="red"><b>ANSWER:</b></font></p>
+			<p><b>5. </b>Explain how bit rate and sample rate affect the size of a sound file.</br><font color="red"><b>Click to show ANSWER</b></font><p>
 			
-			<p><b>4. </b>What metadata is stored with an image file?</p>
-
-			<p><b>5. </b>Explain how bit rate and sample rate affect the size of a sound file.</br><font color="red"><b>ANSWER:</b></font><p>
+			<p><b>6. </b>Explain how instructions are coded in binary in a computer and how the computer is able to distinguish between instructions and data.</br><font color="red"><b>Click to show ANSWER</b></font></p>
 			
-			<p><b>6. </b>Explain how instructions are coded in binary in a computer and how the computer is able to distinguish between instructions and data.</br><font color="red"><b>ANSWER:</b></font></p>
-
 			</div>
         </div>
       </div>
