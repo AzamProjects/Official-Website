@@ -46,7 +46,13 @@
 		});
 	});
 	
+	$(document).ready(function(){
+		$(".imgFileQuestion").hide();
 
+		$("#answer3).click(function(){
+			$(".imgFileQuestion").toggle();
+		});
+	});
 
 	</script>	
 	
@@ -315,7 +321,7 @@
               <img class="img-fluid" src="../img/notes/chapter12/twoQuestion.png" alt="">
             </a>	
 			
-			<p><b>3. </b>Explain how the image size and colour depth affect the size of an image size of an image file.</br><font color="red"><b>Click to show ANSWER</b></font></p>
+			<p><b>3. </b>Explain how the image size and colour depth affect the size of an image size of an image file.</br><font color="red"><b id="answer3" style="cursor: pointer">Click to show ANSWER</b></font></p>
 			
 			<p><b>4. </b>What metadata is stored with an image file?</br><font color="red"><b>Click to show ANSWER</b></font></p>
 
